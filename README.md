@@ -37,7 +37,12 @@ python3 build.py
 python3 -m http.server 4173 --directory dist
 ```
 
-## 피드백용 공유 링크 (claude.ai 아티팩트)
+## 배포 (GitHub Pages)
+- 주소: https://smille1018.github.io/jcvalley-website/
+- `main` 브랜치에 push하면 GitHub Actions(`.github/workflows/pages.yml`)가 `build.py`를 돌려 자동 배포합니다 (1분 내외).
+- 실제 도메인을 연결할 때는 저장소 Settings → Pages → Custom domain에 입력하고, 도메인 등록업체 DNS에 CNAME을 추가합니다.
+
+## 피드백용 공유 링크 (claude.ai 아티팩트, 보조)
 `python3 build.py`가 `dist/`(실제 배포용)와 함께 `dist-artifact/`(아티팩트용: 상대경로, 첫 페이지 껍데기 제거)를 만듭니다.
 - 공유 링크: https://claude.ai/artifact/KQfXd5eMSmP32rSJLZE9bd (비공개 — 페이지의 Share 메뉴에서 사람을 추가해야 열림)
 - 수정 후에는 Claude에게 "아티팩트 다시 게시해줘"라고 하면 같은 링크가 갱신됩니다.
