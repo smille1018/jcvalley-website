@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{title}}</title>
+<meta name="description" content="{{description}}" />
+<link rel="canonical" href="{{canonical}}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="JC VALLEY" />
+<meta property="og:title" content="{{title}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:url" content="{{canonical}}" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="theme-color" content="#1B2430" />
+<link rel="icon" href="/assets/img/jc-valley-symbol.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/assets/img/jc-valley-symbol.png" />
+
+<!-- Tailwind (Play CDN: 초안용. 운영 배포 전 Tailwind CLI 빌드로 교체 권장) -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+// Tailwind는 레이아웃 유틸리티(grid/flex/gap/margin)용으로만 씁니다. 색·타입·radius는 site.css의 디자인 시스템 토큰을 쓰세요.
+tailwind.config = { corePlugins: { preflight: true } }
+</script>
+<link rel="preload" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/assets/css/site.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JC VALLEY",
+  "logo": "{{site_url}}/assets/img/jc-valley-symbol.png",
+  "alternateName": ["JCValley Inc.", "주식회사 제이씨밸리코리아", "제이씨밸리"],
+  "url": "{{site_url}}",
+  "description": "8년간 450개 스타트업의 글로벌 성장을 지원한 한국-실리콘밸리 크로스보더 액셀러레이터. 대학·산학협력단 글로벌 연수, 공공기관 북미 진출, 스타트업 법인 전환 및 현지 IR·GTM 위탁 운영.",
+  "founder": { "@type": "Person", "name": "Justin Cho", "jobTitle": "CEO & Founder" },
+  "areaServed": ["US", "KR"],
+  "address": [
+    { "@type": "PostalAddress", "addressLocality": "Santa Clara", "addressRegion": "CA", "addressCountry": "US" },
+    { "@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR" }
+  ]
+}
+</script>
+</head>
+<body data-page="{{page}}">
+<a href="#main" class="skip-link">본문 바로가기</a>

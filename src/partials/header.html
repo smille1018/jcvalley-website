@@ -1,0 +1,44 @@
+<header id="nav" class="site-header">
+  <div class="container">
+    <div class="bar">
+      <a href="/" aria-label="JC VALLEY 홈">
+        <img class="logo" src="/assets/img/jc-valley-logo.svg" alt="JC VALLEY" width="121" height="32" />
+      </a>
+
+      <nav class="nav" aria-label="주 메뉴">
+        <a href="/about.html"     class="nav-link" data-nav="about"     data-en="About">회사 소개</a>
+        <a href="/portfolio.html" class="nav-link" data-nav="portfolio" data-en="Invest &amp; Build">투자 · 육성</a>
+        <a href="/partners.html"  class="nav-link" data-nav="partners"  data-en="Partners">파트너십</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="언어 선택 / Language">
+          <button type="button" class="lang-opt is-active" data-lang="ko">KR</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-opt" data-lang="en">EN</button>
+        </div>
+        <a href="/contact.html" class="jc-btn jc-btn--primary">
+          <span class="header-cta-full" data-en="Apply now">지원하기</span>
+          <span class="header-cta-short" data-en="Apply">지원</span>
+        </a>
+        <button id="menuBtn" class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu hidden lg:hidden">
+    <div class="container pb-4">
+      <a href="/about.html"     class="m-link" data-nav="about"     data-en="About">회사 소개</a>
+      <a href="/portfolio.html" class="m-link" data-nav="portfolio" data-en="Invest &amp; Build">투자 · 육성</a>
+      <a href="/partners.html"  class="m-link" data-nav="partners"  data-en="Partners">파트너십</a>
+      <a href="/contact.html"   class="m-link" data-nav="contact"   data-en="Apply · Contact">지원 · 문의</a>
+      <div class="lang">
+        <button type="button" class="lang-opt is-active" data-lang="ko">KR</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-opt" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>

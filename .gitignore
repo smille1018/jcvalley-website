@@ -1,0 +1,5 @@
+dist/
+dist-artifact/
+.claude/
+.DS_Store
+__pycache__/
